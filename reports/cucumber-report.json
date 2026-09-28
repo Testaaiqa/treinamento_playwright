@@ -1,0 +1,401 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "gerenciamento-de-usuários-pela-api;criar,-autenticar-e-consultar-um-usuário",
+        "keyword": "Cenario",
+        "line": 6,
+        "name": "Criar, autenticar e consultar um usuário",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 17390500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3970399
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que possuo os dados dinâmicos de um novo usuário",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3231821500
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "envio uma requisição para criar o usuário",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:23"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1857700
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 9,
+            "name": "o usuário deve ser criado com sucesso",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 295068599
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "autentico com o usuário criado",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:53"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1091899
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "devo receber um token de autenticação",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:67"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 268541600
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "consulto todos os usuários autenticado",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:80"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1091300
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "a listagem de usuários deve ser retornada com sucesso",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:90"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1010500
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 14,
+            "name": "o usuário criado deve estar presente na listagem",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:98"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 242946299
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "consulto o usuário criado pelo ID",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:107"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1239300
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 16,
+            "name": "os dados do usuário devem ser retornados corretamente",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:121"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1115099
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "gerenciamento-de-usuários-pela-api",
+    "line": 4,
+    "keyword": "Funcionalidade",
+    "name": "Gerenciamento de usuários pela API",
+    "tags": [
+      {
+        "name": "@api",
+        "line": 3
+      }
+    ],
+    "uri": "tests\\features\\api\\usuario-api.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cadastro-de-novo-usuário-na-plataforma-de-teste;cadastro-de-novo-usuário-com-sucesso",
+        "keyword": "Cenario",
+        "line": 6,
+        "name": "Cadastro de novo usuário com sucesso",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3657781999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 716842899
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que acesso a Plataforma Testa aí QA",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 159649099
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "acesso o formulário de cadastro de novo usuário",
+            "match": {
+              "location": "tests\\steps\\frontend\\cadastro.step.js:6"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 323762299
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "preencho os campos obrigatórios do formulário",
+            "match": {
+              "location": "tests\\steps\\frontend\\cadastro.step.js:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3946077099
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "confirmo a criação do usuário",
+            "match": {
+              "location": "tests\\steps\\frontend\\cadastro.step.js:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2181499
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "vejo a página de boas vindas",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 672323199
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 3
+          },
+          {
+            "name": "@cadastro",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cadastro-de-novo-usuário-na-plataforma-de-teste",
+    "line": 4,
+    "keyword": "Funcionalidade",
+    "name": "Cadastro de novo usuário na Plataforma de Teste",
+    "tags": [
+      {
+        "name": "@ui",
+        "line": 3
+      },
+      {
+        "name": "@cadastro",
+        "line": 3
+      }
+    ],
+    "uri": "tests\\features\\frontend\\cadastro.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-na-plataforma-de-teste;login-com-sucesso",
+        "keyword": "Cenario",
+        "line": 6,
+        "name": "Login com sucesso",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3380567399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 657328800
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que acesso a Plataforma Testa aí QA",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 51770700
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 8,
+            "name": "preencho os campos de email e senha",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 96756900
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "clico no botão Login",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2385083399
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "vejo a página de boas vindas",
+            "match": {
+              "location": "tests\\steps\\frontend\\login.step.js:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3210814899
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-na-plataforma-de-teste",
+    "line": 4,
+    "keyword": "Funcionalidade",
+    "name": "Login na Plataforma de Teste",
+    "tags": [
+      {
+        "name": "@ui",
+        "line": 3
+      }
+    ],
+    "uri": "tests\\features\\frontend\\login.feature"
+  }
+]

@@ -5,13 +5,14 @@ import fs from 'node:fs';
 
 setDefaultTimeout(60000);
 
-Before({ tags: '@ui' }, async function () {
+Before({ tags: 'not @api' }, async function () {
+
   this.browser = await chromium.launch({ headless: false });
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
 });
 
-After({ tags: '@ui' }, async function (scenario) {
+After({ tags: 'not @api' }, async function (scenario) {
   const { page, context, browser } = this;
 
   if (!page) return;
