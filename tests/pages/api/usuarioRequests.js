@@ -1,3 +1,5 @@
+
+
 export class UsuarioApi {
     /**
      * @param {import('@playwright/test').APIRequestContext} request
@@ -17,14 +19,15 @@ export class UsuarioApi {
         };
     }
 
-    async criarUsuarioApi(name, email, password) {
-        const payload = JSON.stringify({ name, email, password });
+    async criarUsuarioApi(payloadRecebido) {
+        const payload = JSON.stringify(payloadRecebido);
+        console.log('Payload enviado para criação:', payload)
         return await this.request.post(this.endpoints.criarUsuario, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            data: payload 
+            data: payload
         });
     }
 
@@ -61,4 +64,5 @@ export class UsuarioApi {
             'Content-Type': 'application/json'
         };
     }
+
 }

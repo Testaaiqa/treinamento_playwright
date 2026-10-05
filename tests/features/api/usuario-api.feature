@@ -1,16 +1,32 @@
-#language: pt
+# language: pt
 
-@api 
+@api
 Funcionalidade: Gerenciamento de usuários pela API
 
-  Cenario: Criar, autenticar e consultar um usuário
+  @criarUsuario
+  Cenário: Criar um novo usuário com sucesso
     Dado que possuo os dados dinâmicos de um novo usuário
-    E envio uma requisição para criar o usuário
+    Quando envio uma requisição para criar o usuário
     Então o usuário deve ser criado com sucesso
-    E autentico com o usuário criado
-    Então devo receber um token de autenticação
-    E consulto todos os usuários autenticado
+
+
+  @autenticarUsuario
+  Cenário: Autenticar com um usuário existente
+    Dado que possuo um usuário cadastrado
+    Quando autentico com as credenciais do usuário
+    Então devo receber um token de autenticação válido
+
+
+  @listarUsuarios
+  Cenário: Listar todos os usuários autenticado
+    Dado que possuo um usuário preparado
+    Quando consulto todos os usuários autenticados
     Então a listagem de usuários deve ser retornada com sucesso
     E o usuário criado deve estar presente na listagem
-    E consulto o usuário criado pelo ID
+
+
+  @buscarUsuario
+  Cenário: Consultar um usuário pelo ID
+    Dado que possuo um usuário preparado
+    Quando consulto o usuário pelo ID
     Então os dados do usuário devem ser retornados corretamente

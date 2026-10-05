@@ -4,15 +4,15 @@
     "elements": [
       {
         "description": "",
-        "id": "gerenciamento-de-usuários-pela-api;criar,-autenticar-e-consultar-um-usuário",
-        "keyword": "Cenario",
-        "line": 6,
-        "name": "Criar, autenticar e consultar um usuário",
+        "id": "gerenciamento-de-usuários-pela-api;criar-um-novo-usuário-com-sucesso",
+        "keyword": "Cenário",
+        "line": 7,
+        "name": "Criar um novo usuário com sucesso",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 17390500
+              "duration": 7667399
             },
             "keyword": "Before",
             "hidden": true
@@ -20,137 +20,46 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3970399
+              "duration": 3623999
             },
             "arguments": [],
             "keyword": "Dado ",
-            "line": 7,
+            "line": 8,
             "name": "que possuo os dados dinâmicos de um novo usuário",
             "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:7"
+              "location": "tests\\steps\\api\\usuario-api.step.js:4"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 3231821500
+              "duration": 3069315099
             },
             "arguments": [],
-            "keyword": "E ",
-            "line": 8,
+            "keyword": "Quando ",
+            "line": 9,
             "name": "envio uma requisição para criar o usuário",
             "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:23"
+              "location": "tests\\steps\\api\\usuario-api.step.js:12"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1857700
+              "duration": 1681700
             },
             "arguments": [],
             "keyword": "Então ",
-            "line": 9,
+            "line": 10,
             "name": "o usuário deve ser criado com sucesso",
             "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:33"
+              "location": "tests\\steps\\api\\usuario-api.step.js:16"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 295068599
-            },
-            "arguments": [],
-            "keyword": "E ",
-            "line": 10,
-            "name": "autentico com o usuário criado",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:53"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 1091899
-            },
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 11,
-            "name": "devo receber um token de autenticação",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:67"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 268541600
-            },
-            "arguments": [],
-            "keyword": "E ",
-            "line": 12,
-            "name": "consulto todos os usuários autenticado",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:80"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 1091300
-            },
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 13,
-            "name": "a listagem de usuários deve ser retornada com sucesso",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:90"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 1010500
-            },
-            "arguments": [],
-            "keyword": "E ",
-            "line": 14,
-            "name": "o usuário criado deve estar presente na listagem",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:98"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 242946299
-            },
-            "arguments": [],
-            "keyword": "E ",
-            "line": 15,
-            "name": "consulto o usuário criado pelo ID",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:107"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 1239300
-            },
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 16,
-            "name": "os dados do usuário devem ser retornados corretamente",
-            "match": {
-              "location": "tests\\steps\\api\\usuario-api.step.js:121"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 1115099
+              "duration": 1349299
             },
             "keyword": "After",
             "hidden": true
@@ -160,6 +69,248 @@
           {
             "name": "@api",
             "line": 3
+          },
+          {
+            "name": "@criarUsuario",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gerenciamento-de-usuários-pela-api;autenticar-com-um-usuário-existente",
+        "keyword": "Cenário",
+        "line": 14,
+        "name": "Autenticar com um usuário existente",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1023499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 314233299
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 15,
+            "name": "que possuo um usuário cadastrado",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 323322399
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "autentico com as credenciais do usuário",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1041600
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 17,
+            "name": "devo receber um token de autenticação válido",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 633900
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          },
+          {
+            "name": "@autenticarUsuario",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gerenciamento-de-usuários-pela-api;listar-todos-os-usuários-autenticado",
+        "keyword": "Cenário",
+        "line": 21,
+        "name": "Listar todos os usuários autenticado",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 364999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 621030399
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 22,
+            "name": "que possuo um usuário preparado",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 264384799
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "consulto todos os usuários autenticados",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:45"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1081299
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "a listagem de usuários deve ser retornada com sucesso",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:49"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 447299
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "o usuário criado deve estar presente na listagem",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:53"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 400499
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          },
+          {
+            "name": "@listarUsuarios",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gerenciamento-de-usuários-pela-api;consultar-um-usuário-pelo-id",
+        "keyword": "Cenário",
+        "line": 29,
+        "name": "Consultar um usuário pelo ID",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 361800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 599701700
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 30,
+            "name": "que possuo um usuário preparado",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 248019599
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 31,
+            "name": "consulto o usuário pelo ID",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:57"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1288300
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 32,
+            "name": "os dados do usuário devem ser retornados corretamente",
+            "match": {
+              "location": "tests\\steps\\api\\usuario-api.step.js:61"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 501400
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          },
+          {
+            "name": "@buscarUsuario",
+            "line": 28
           }
         ],
         "type": "scenario"
@@ -190,7 +341,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3657781999
+              "duration": 2687421500
             },
             "keyword": "Before",
             "hidden": true
@@ -198,7 +349,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 716842899
+              "duration": 2634327299
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -211,7 +362,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 159649099
+              "duration": 116093699
             },
             "arguments": [],
             "keyword": "E ",
@@ -224,7 +375,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 323762299
+              "duration": 381656599
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -237,7 +388,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3946077099
+              "duration": 6017322599
             },
             "arguments": [],
             "keyword": "E ",
@@ -250,7 +401,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2181499
+              "duration": 5586000
             },
             "arguments": [],
             "keyword": "Então ",
@@ -263,7 +414,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 672323199
+              "duration": 700787999
             },
             "keyword": "After",
             "hidden": true
@@ -311,7 +462,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3380567399
+              "duration": 2816600800
             },
             "keyword": "Before",
             "hidden": true
@@ -319,7 +470,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 657328800
+              "duration": 774099300
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -332,7 +483,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 51770700
+              "duration": 93817100
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -345,7 +496,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 96756900
+              "duration": 50277600
             },
             "arguments": [],
             "keyword": "E ",
@@ -358,7 +509,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2385083399
+              "duration": 2361531100
             },
             "arguments": [],
             "keyword": "Então ",
@@ -371,7 +522,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3210814899
+              "duration": 1071598799
             },
             "keyword": "After",
             "hidden": true

@@ -11,6 +11,7 @@
     "test:ui": "cucumber-js --tags @ui",
     "test:cadastro": "cucumber-js --tags @cadastro",
     "test:api": "cucumber-js --tags @api",
+    "tags": "cucumber-js --tags",
     "report": "node reports/generate-reports.js"
   },
   "keywords": [],
